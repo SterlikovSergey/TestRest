@@ -26,7 +26,7 @@ public class TestController {
 
 
 //        File file = new File("test.png");
-        FileOutputStream fileOutputStream = new FileOutputStream("test.png");
+        FileOutputStream fileOutputStream = new FileOutputStream("test1.png");
         fileOutputStream.write(avatar.getBytes());
         FileOutputStream fileOutputStream1 = new FileOutputStream("test.pdf");
         fileOutputStream1.write(doc.getBytes());
@@ -44,19 +44,19 @@ public class TestController {
     @Setter
     @Getter
     static class User {
-        String name;
+        String userName;
 
         public User() {
         }
 
         public User(String name) {
-            this.name = name;
+            this.userName = name;
         }
 
         @Override
         public String toString() {
             return "User{" +
-                    "name='" + name + '\'' +
+                    "name='" + userName + '\'' +
                     '}';
         }
     }
